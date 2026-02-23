@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 40px;
+      }
+
+      .card {
+        flex: 1 1 250px;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      .card h2 {
+        margin-top: 0;
+      }
+
+      .card p {
+        color: #555;
+      }
+
+      .card button {
+        padding: 10px 15px;
+        border: none;
+        background: #007bff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .card button:hover {
+        background: #0056b3;
+      }
+      
+      @media (max-width: 900px) {
+        .card {
+          flex: 1 1 45%;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .card {
+          flex: 1 1 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h2>Card 1</h2>
+        <p>This is a simple card layout using Flexbox.</p>
+        <button>Read More</button>
+      </div>
+
+      <div class="card">
+        <h2>Card 2</h2>
+        <p>Flexbox makes horizontal layouts easy and flexible.</p>
+        <button>Read More</button>
+      </div>
+
+      <div class="card">
+        <h2>Card 3</h2>
+        <p>You are building real frontend skills now.</p>
+        <button>Read More</button>
+      </div>
+    </div>
+  </body>
+</html>

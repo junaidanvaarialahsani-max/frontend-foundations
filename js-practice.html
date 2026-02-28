@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>JS Practice</title>
+  </head>
+  <body>
+    <h1 id="title">Hello</h1>
+    <button id="btn">Click Me</button>
+
+    <script>
+      // const button = document.getElementById("btn");
+      // const title = document.getElementById("title");
+
+      // button.addEventListener("click", function() {
+      //   title.textContent = "You Clicked the Button!";
+      // });
+      const button = document.getElementById("btn");
+      const title = document.getElementById("title");
+
+      button.addEventListener("click", function () {
+        title.textContent = "You Clicked the Button!";
+        title.style.color = "red";
+        document.body.style.backgroundColor = "#f4f4f4";
+      });
+    </script>
+  </body>
+</html>
